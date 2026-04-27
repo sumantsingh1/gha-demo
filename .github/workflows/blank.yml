@@ -7,7 +7,7 @@ on:
       - 'release/**'
   pull_request:
     branches: 
-      - main  //when pr is created again main branch it's going to trigger
+      - main  #when pr is created again main branch it's going to trigger
 jobs:
   build:
     runs-on: ubuntu-latest
