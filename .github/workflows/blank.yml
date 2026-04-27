@@ -1,5 +1,13 @@
 name: Hello World2
-on: push
+on: 
+  push:
+    branches:
+      - main
+      - develop
+      - 'release/**'
+  pull_request:
+    branches: 
+      - main  //when pr is created again main branch it's going to trigger
 jobs:
   build:
     runs-on: ubuntu-latest
